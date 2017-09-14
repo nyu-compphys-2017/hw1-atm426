@@ -27,7 +27,8 @@ def plot_shit(freq, volts, bf):
     plt.title(r'V vs $\nu$')
     plt.xlabel(r'$\nu$ [hertz]') ; plt.ylabel('V [volts]')
     plt.plot(freq, volts, 'ko')
-    plt.plot(freq, bf, 'k--')
+    plt.plot(freq, bf, 'k--', label='m = 4.088e-15 \n c = -1.731', linewidth=2)
+    plt.legend(loc='best')
     plt.show()
     plt.close('all')
 
