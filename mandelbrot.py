@@ -11,16 +11,19 @@ def main(S, N):
 
     extent = [-2, 2, -2, 2]
     plt.imshow(z_binary, extent=extent, cmap='Greys')
+    plt.colorbar()
     plt.show()
     plt.close('all')
 
     log_zd = np.log10(z_density)
     plt.imshow(z_density, extent=extent, cmap='jet')
+    plt.colorbar()
     plt.show()
     plt.close('all')
 
     log_zd = np.log10(z_density)
     plt.imshow(log_zd, extent=extent, cmap='jet')
+    plt.colorbar()
     plt.show()
     plt.close('all')
 

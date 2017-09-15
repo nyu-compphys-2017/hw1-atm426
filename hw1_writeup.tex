@@ -23,7 +23,31 @@ For our purposes we made a evenly spaced grid in $x$ and $y$ ranging from -2 to 
 To keep track of whether an $(x,y)$ pair was in the set, an array of zeros, $Z$, of size $(N,N)$ was created where $N$ is the size of the $x$ and $y$ grids. If, $|z|$ was ever greater than 2, the corresponding point in $Z$ was left as 0. If, after 100 iterations, the value for $|z|$ was less than 2, the corresponding point was given a value of 1. This method was used to make a 'binary' Mandelbrot set where points are considered either 'in' or 'out'. Additionally, a Mandelbrot 'density' plot was made where the value in $Z$ was incremented based on the number of iterations before $|z|$ becomes larger than 2. 
 
 \subsection*{Results}
-plots
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{mandel_1.eps}
+    \caption{\scriptsize 'Binary' Mandelbrot image. The black region contains the points where $|z|<2$}
+    \label{fig:elevels}
+   \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[t]{0.4\textwidth}
+    \centering
+    \vspace{0pt}
+    \includegraphics[scale=0.42]{mandel_2.eps}
+    \caption{\scriptsize $\nu_{RF}$ vs $B_{H}$ for $^{85}Rb$}
+  \end{minipage} \hfill
+  \begin{minipage}[t]{0.4\textwidth}
+    \centering
+    \vspace{0pt}
+    \includegraphics[scale=0.42]{mandel_3.eps}
+    \caption{\scriptsize $\nu_{RF}$ vs $B_{H}$ for $^{87}Rb$}
+  \end{minipage}
+\end{figure}
 
 
 \section*{Problem 2}
